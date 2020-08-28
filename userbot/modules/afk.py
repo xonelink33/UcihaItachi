@@ -132,9 +132,9 @@ async def mention_afk(mention):
                     wday = now + datetime.timedelta(days=-days)
                     afk_since = wday.strftime('%A')
             elif hours > 1:
-                afk_since = f"{int(hours)} Jam{int(minutes)} Menit Yang Lalu"
+                afk_since = f"{int(hours)} Jam {int(minutes)} Menit Yang Lalu"
             elif minutes > 0:
-                afk_since = f"{int(minutes)} Menit{int(seconds)} Detik Yang Lalu"
+                afk_since = f"{int(minutes)} Menit {int(seconds)} Detik Yang Lalu"
             else:
                 afk_since = f"{int(seconds)} Detik Yang Lalu"
             if mention.sender_id not in USERS:
@@ -208,9 +208,9 @@ async def afk_on_pm(sender):
                     wday = now + datetime.timedelta(days=-days)
                     afk_since = wday.strftime('%A')
             elif hours > 1:
-                afk_since = f"{int(hours)} Jam{int(minutes)} Menit Yang Lalu"
+                afk_since = f"{int(hours)} Jam {int(minutes)} Menit Yang Lalu"
             elif minutes > 0:
-                afk_since = f"{int(minutes)} Menit{int(seconds)} Detik Yang Lalu"
+                afk_since = f"{int(minutes)} Menit {int(seconds)} Detik Yang Lalu"
             else:
                 afk_since = f"{int(seconds)} Detik Yang Lalu"
             if sender.sender_id not in USERS:
