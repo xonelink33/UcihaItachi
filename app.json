@@ -21,12 +21,10 @@
     },
     "API_HASH": {
       "description": "Get this value from my.telegram.org.",
-      "value": "wajib diisi"
       "required": true
     },
     "STRING_SESSION": {
       "description": "Get this value by running [python3 string_session.py] in Termux or local system.",
-      "value": "wajib diisi"
       "required": true
     },
     "HEROKU_MEMEZ": {
@@ -36,11 +34,9 @@
     },
     "HEROKU_API_KEY": {
       "description": "Your Heroku API key, get it from 'https://dashboard.heroku.com/account'",
-      "value": "wajib diisi"
     },
     "HEROKU_APP_NAME": {
       "description": "Add the Heroku app name here. It helps with userbot updates.",
-      "value": "wajib diisi"
       "required": true
     },
     "GITHUB_ACCESS_TOKEN": {
