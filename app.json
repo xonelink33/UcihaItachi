@@ -16,7 +16,6 @@
   "env": {
     "API_KEY": {
       "description": "Get this value from my.telegram.org.",
-      "value": "wajib diisi"
       "required": true
     },
     "API_HASH": {
