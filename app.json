@@ -33,6 +33,7 @@
     },
     "HEROKU_API_KEY": {
       "description": "Your Heroku API key, get it from 'https://dashboard.heroku.com/account'",
+      "value": ""
     },
     "HEROKU_APP_NAME": {
       "description": "Add the Heroku app name here. It helps with userbot updates.",
@@ -40,6 +41,7 @@
     },
     "GITHUB_ACCESS_TOKEN": {
       "description": "Your GITHUB_ACCESS_TOKEN, get it from 'https://github.com/settings/tokens'",
+      "value": "",
       "required": false
     },
     "GIT_REPO_NAME": {
@@ -83,7 +85,7 @@
     },
     "BOTLOG": {
       "description": "Incase you want to turn off logging, put this to false",
-      "value": "True"
+      "value": "False"
     },
     "DEEZER_ARL_TOKEN": {
       "description": "Fill of your Deezer ARL token. Get from https://notabug.org/RemixDevs/DeezloaderRemix/wiki/Login+via+userToken",
@@ -130,10 +132,6 @@
       "description": "Set alias name for updater",
       "required": false
     },
-    "QUOTES_API_TOKEN": {
-      "description": "Enhance ur text to sticker. Get your own API token from http://antiddos.systems.",
-      "required": false
-    },
     "CLEAN_WELCOME": {
       "description": "When a new person joins, the old welcome message is deleted.",
       "value": "True"
@@ -168,7 +166,7 @@
     },
     "DEFAULT_BIO": {
       "description": "Default profile bio.",
-      "value": "[PM = Report Spam] I ❤ ️ RizkyAkame",
+      "value": "[PM = Report Spam] I ❤ ️One4uBot",
       "required": false
     },
     "ALIVE_NAME": {
@@ -193,7 +191,7 @@
     },
     "WEATHER_DEFLANG": {
       "description": "Set the default language for the userbot's weather module.",
-      "value": "id",
+      "value": "en",
       "required": false
     },
     "LOGSPAMMER": {
