@@ -1,9 +1,7 @@
 # Copyright (C) 2019 The Raphielscape Company LLC.
 #
-# Licensed under the Raphielscape Public License, Version 1.c (the "License");
+# Licensed under the Raphielscape Public License, Version 1.d (the "License");
 # you may not use this file except in compliance with the License.
-#
-# thanks to the owner of X-tra-Telegram for tts fix
 #
 """ Userbot module containing various scrapers. """
 
@@ -11,46 +9,42 @@ import os
 import time
 import asyncio
 import shutil
+import json
 from bs4 import BeautifulSoup
 import re
 from time import sleep
-from html import unescape
 from re import findall
 from selenium import webdriver
-from selenium.webdriver.support.ui import Select
-from selenium.webdriver.chrome.options import Options
 from urllib.parse import quote_plus
 from urllib.error import HTTPError
-from telethon import events
+from selenium.webdriver.chrome.options import Options
 from wikipedia import summary
 from wikipedia.exceptions import DisambiguationError, PageError
 from urbandict import define
 from requests import get
 from search_engine_parser import GoogleSearch
-from googleapiclient.discovery import build
-from googleapiclient.errors import HttpError
 from googletrans import LANGUAGES, Translator
 from gtts import gTTS
 from gtts.lang import tts_langs
 from emoji import get_emoji_regexp
+from youtube_search import YoutubeSearch
 from youtube_dl import YoutubeDL
 from youtube_dl.utils import (DownloadError, ContentTooShortError,
                               ExtractorError, GeoRestrictedError,
                               MaxDownloadsReached, PostProcessingError,
                               UnavailableVideoError, XAttrMetadataError)
 from asyncio import sleep
-from userbot import CMD_HELP, BOTLOG, BOTLOG_CHATID, CHROME_DRIVER, GOOGLE_CHROME_BIN, bot
+from userbot import (CMD_HELP, BOTLOG,
+                     BOTLOG_CHATID, CHROME_DRIVER,
+                     GOOGLE_CHROME_BIN, WOLFRAM_ID)
 from userbot.events import register
 from telethon.tl.types import DocumentAttributeAudio
-from userbot.modules.upload_download import progress, humanbytes, time_formatter
-from userbot.google_images_download import googleimagesdownload
-import subprocess
-from datetime import datetime
-
+from userbot.utils import progress
+from userbot.utils.google_images_download import googleimagesdownload
 
 CARBONLANG = "auto"
-TTS_LANG = "id"
-TRT_LANG = "id"
+TTS_LANG = "en"
+TRT_LANG = "en"
 TEMP_DOWNLOAD_DIRECTORY = "/root/userbot/.bin"
 
 @register(outgoing=True, pattern="^.crblang (.*)")
