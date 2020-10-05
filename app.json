@@ -1,7 +1,7 @@
 {
-  "name": "Telegram ShinoaHiiragi",
-  "description": "[ShinoaHiiragi] Bot Telegram",
-  "logo": "https://telegra.ph/file/ba033bb7582b700f751c4.jpg",
+  "name": "Telegram ABU",
+  "description": "[Uciha] Bot Telegram",
+  "logo": "https://telegra.ph/file/aaca3fb3b4f3c37faf86d.jpg",
   "keywords": [
     "telegram",
     "userbot",
@@ -9,9 +9,9 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/RizkyAkame/ShinoaHiiragi",
+  "repository": "https://github.com/AbuUciha/UcihaItachi",
   "website": "https://telegra.ph/How-to-host-a-Telegram-Userbot-11-02",
-  "success_url": "https://t.me/rizkynfs",
+  "success_url": "https://t.me/Abucuyy",
   "stack": "container",
   "env": {
     "API_KEY": {
@@ -85,7 +85,7 @@
     },
     "BOTLOG": {
       "description": "Incase you want to turn off logging, put this to false",
-      "value": "False"
+      "value": "True"
     },
     "DEEZER_ARL_TOKEN": {
       "description": "Fill of your Deezer ARL token. Get from https://notabug.org/RemixDevs/DeezloaderRemix/wiki/Login+via+userToken",
