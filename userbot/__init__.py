@@ -45,7 +45,7 @@ if version_info[0] < 3 or version_info[1] < 8:
 # Check if the config was edited by using the already used variable.
 # Basically, its the 'virginity check' for the config file ;)
 CONFIG_CHECK = (os.environ.get(
-    "___________PLOX_______REMOVE_____THIS_____LINE__________") or None)
+    "") or None)
 
 if CONFIG_CHECK:
     LOGS.info(
@@ -54,25 +54,25 @@ if CONFIG_CHECK:
     quit(1)
 
 # Telegram App KEY and HASH
-API_KEY = os.environ.get("API_KEY") or None
-API_HASH = os.environ.get("API_HASH") or None
+API_KEY = os.environ.get("1469267") or None
+API_HASH = os.environ.get("2c0a93001bb9af4f272b5f23bb22ef30") or None
 
 
 # Userbot Session String
-STRING_SESSION = os.environ.get("STRING_SESSION") or None
+STRING_SESSION = os.environ.get("1BVtsOJkBuyvePkIarFKSbhfqRovKlH66HCkpfFzj5E55lZlwKPnExx7MBG0v61RwGa0HdgXv5xt-pbbFRF_9NAGnDfmaAXx8OoEbx2QyTIyemP-Os2npAh_e4YEPllLqNKpgyuCthcWVhGEeBBB7860K_mZ3fdlcJQOGQkVHtbuXh49tJluv-yo5IAudevsO9yhUcwymMt85-xckRzqWFFXPJ6W6EvK6A1OOkwzodbMXxFKSFDYi17OT5iUs-r8j9QSR6PLOyiKorNLMzLgLUvOFDPu-7FQbcD-Zo4r6cl0xeuEBF-VsviCnhO1Rz3S_xhLycjfPNmRClJRVsCz5ZTcrJvNtGYo") or None
 
 # Deezloader
 DEEZER_ARL_TOKEN = os.environ.get("DEEZER_ARL_TOKEN") or None
 
 # Logging channel/group ID configuration.
-BOTLOG_CHATID = int(os.environ.get("BOTLOG_CHATID") or 0)
+BOTLOG_CHATID = int(os.environ.get("1001306353032") or 0)
 
 # Userbot logging feature switch.
 BOTLOG = sb(os.environ.get("BOTLOG") or "False")
 if BOTLOG:
     LOGSPAMMER = sb(os.environ.get("LOGSPAMMER") or "False")
 else:
-    LOGSPAMMER = False
+    LOGSPAMMER = True
 
 # Bleep Blop, this is a bot ;)
 PM_AUTO_BAN = sb(os.environ.get("PM_AUTO_BAN") or "False")
